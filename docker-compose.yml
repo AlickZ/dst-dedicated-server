@@ -28,8 +28,8 @@ services:
     environment:
       - SHARD_NAME=Master
 
-    # These allow to stdin when attaching to the container via `docker attach`
-    # Any server commands should be sent to the master shard as it manages its slaves (Caves)
+    #这些允许在通过“docker attach”连接到容器时使用stdin`
+    #任何服务器命令都应该在主shard管理从属shard（洞穴）时发送给它
     stdin_open: true
     tty: true
 
