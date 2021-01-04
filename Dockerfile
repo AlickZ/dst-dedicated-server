@@ -1,11 +1,5 @@
 FROM debian:latest
 
-MAINTAINER Caio Mathielo <mathielo@gmail.com>
-
-LABEL \
-    description="Don't Starve Together dedicated server" \
-    source="https://github.com/mathielo/dst-dedicated-server"
-
 # 创建运行DST服务器的特定用户
 RUN useradd -ms /bin/bash/ dst
 WORKDIR /home/dst
